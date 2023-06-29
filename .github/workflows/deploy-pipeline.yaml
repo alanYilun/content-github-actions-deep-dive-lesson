@@ -47,7 +47,8 @@ jobs:
           
   publish: 
     runs-on: ubuntu-latest
-    needs: build 
+    needs: build
+    permissions: write-all
     steps:
       - name: create release
         uses: actions/create-release@v1
